@@ -1,12 +1,12 @@
-let _define = customElements.define;
-let registered = [];
-customElements.define = function() {
-  const componentName = arguments[0];
+const _define = window.customElements.define
+const registered = []
+window.customElements.define = function () {
+  const componentName = arguments[0]
 
   if (registered.includes(componentName)) {
-    return;
+    return
   }
 
-  registered.push(componentName);
-  return _define.apply(this, arguments);
-};
+  registered.push(componentName)
+  return _define.apply(this, arguments)
+}

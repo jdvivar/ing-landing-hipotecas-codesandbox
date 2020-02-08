@@ -1,2 +1,3 @@
-import "./dedupe";
-import "./components/ing-landing-hipoteca";
+import './dedupe'
+import './reset.css'
+import './components/ing-landing-hipoteca'
