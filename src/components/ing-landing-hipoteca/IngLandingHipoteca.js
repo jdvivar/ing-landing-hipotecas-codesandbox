@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit-element'
 import { styles } from './styles'
 import '../ing-card-hipoteca'
 import '../ing-hipotecas-ventajas'
+import '../ing-ventaja'
 
 export class IngLandingHipoteca extends LitElement {
   static get styles () {
@@ -75,8 +76,52 @@ export class IngLandingHipoteca extends LitElement {
             </div>
         </div>
         <img class="fondo" src=https://www.ing.es/hipotecas/images/forma_fondo.svg>
-        <ing-hipotecas-ventajas></ing-hipotecas-ventajas>
-        <ing-hipotecas-ventajas></ing-hipotecas-ventajas>
+        <ing-hipotecas-ventajas>
+          <slot slot="titulo" name="ventajas-1-titulo">Y como siempre, con todas las ventajas</slot>
+          <slot slot="ventajas" name="ventajas-1-lista">
+            <ing-ventaja>
+              <ing-content slot="titulo">0 %</ing-content>
+              <ing-content slot="subtitulo">Comisión por reembolso o amortización anticipada total o parcial</ing-content>
+              <ing-content slot="descripcion">Adelanta tus pagos y cancela tu hipoteca cuando quieras sin coste.</ing-content>
+            </ing-ventaja>
+            <ing-ventaja>
+              <ing-content slot="titulo">0 %</ing-content>
+              <ing-content slot="subtitulo">Comisión de apertura</ing-content>
+              <ing-content slot="descripcion">No te cobramos por elegirnos como tu banco.</ing-content>
+            </ing-ventaja>
+            <ing-ventaja>
+              <ing-content slot="titulo">0 %</ing-content>
+              <ing-content slot="subtitulo">Comisión por subrogación</ing-content>
+              <ing-content slot="descripcion">Si encuentras mejores condiciones, eres libre para aprovecharlas.</ing-content>
+            </ing-ventaja>
+            <ing-ventaja>
+              <ing-content slot="titulo">0 %</ing-content>
+              <ing-content slot="subtitulo">Por cambio de condiciones</ing-content>
+              <ing-content slot="descripcion">Cambia el plazo y la cuota sin que te cueste nada.</ing-content>
+            </ing-ventaja>
+          </slot>
+        </ing-hipotecas-ventajas>
+        <ing-hipotecas-ventajas>
+          <slot slot="titulo" name="ventajas-2-titulo">Y sin gastos, ninguno</slot>
+          <slot slot="ventajas" name="ventajas-2-lista">
+            <ing-ventaja>
+              <ing-content slot="titulo">0 €</ing-content>
+              <ing-content slot="subtitulo">Gastos de notaría</ing-content>
+            </ing-ventaja>
+            <ing-ventaja>
+              <ing-content slot="titulo">0 €</ing-content>
+              <ing-content slot="subtitulo">Gastos de gestoría</ing-content>
+            </ing-ventaja>
+            <ing-ventaja>
+              <ing-content slot="titulo">0 €</ing-content>
+              <ing-content slot="subtitulo">Gastos de registro</ing-content>
+            </ing-ventaja>
+            <ing-ventaja>
+              <ing-content slot="titulo">0 €</ing-content>
+              <ing-content slot="subtitulo">Gastos de tasación*</ing-content>
+            </ing-ventaja>
+          </slot>
+        </ing-hipotecas-ventajas>
         <div style="background-color: #f0f0f0; height: 500px; margin-top: 50px;"></div>
     `
   }

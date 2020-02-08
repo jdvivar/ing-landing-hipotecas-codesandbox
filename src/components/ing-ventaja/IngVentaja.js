@@ -3,6 +3,11 @@ import { LitElement, html, css } from 'lit-element'
 export class IngVentaja extends LitElement {
   static get styles () {
     return css`
+      :host {
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+
       .wrapper {
         text-align: center;
         padding: 0 20px;
@@ -22,15 +27,16 @@ export class IngVentaja extends LitElement {
       .description {
         font-size: 16px;
       }
+
     `
   }
 
   render () {
     return html`
       <div class="wrapper">
-        <div class="title">0 %</div>   
-        <p class="subtitle">Comisión por reembolso o amortización anticipada total o parcial</p>   
-        <p class="description">Adelanta tus pagos y cancela tu hipoteca cuando quieras sin coste.</p>  
+        <div class="title"><slot name="titulo"></slot></div>   
+        <p class="subtitle"><slot name="subtitulo"></slot></p>   
+        <p class="description"><slot name="descripcion"></slot></p>  
       </div> 
     `
   }

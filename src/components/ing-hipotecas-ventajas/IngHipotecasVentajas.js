@@ -1,5 +1,4 @@
 import { LitElement, html, css } from 'lit-element'
-import '../ing-ventaja'
 
 export class IngHipotecasVentajas extends LitElement {
   static get styles () {
@@ -15,6 +14,11 @@ export class IngHipotecasVentajas extends LitElement {
         justify-content: space-between;
     }
 
+    .wrapper-ventajas ing-ventaja {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
     h2 {
       font-size: 32px;
       color: var(--naranja);
@@ -26,12 +30,9 @@ export class IngHipotecasVentajas extends LitElement {
   render () {
     return html`
       <div class="wrapper">
-          <h2>Y como siempre, con todas las ventajas</h2>
+          <h2><slot name="titulo"></slot></h2>
           <div class="wrapper-ventajas">
-            <ing-ventaja></ing-ventaja>
-            <ing-ventaja></ing-ventaja>
-            <ing-ventaja></ing-ventaja>
-            <ing-ventaja></ing-ventaja>
+            <slot name="ventajas"></slot>
           </div>
       </div>
     `
