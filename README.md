@@ -29,6 +29,8 @@ Want to give it a shot? Go ahead: click here and explore it within the warmth of
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/jdvivar/ing-landing-hipotecas-demo)
 
+![Glitch start](/doc/glitch-start.gif)
+
 > **Advanced users**
 >
 > If you want to execute locally instead, clone the repo, install dependencies and then just type:
