@@ -1,6 +1,8 @@
 {
   "name": "ing-landing-hipotecas-demo",
   "repository": "github:jdvivar/ing-landing-hipotecas-demo",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
