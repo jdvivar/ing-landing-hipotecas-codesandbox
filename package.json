@@ -4,7 +4,7 @@
   "license": "SEE LICENSE IN LICENSE FILE",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "A landing page made with a single tag, ultra customisable via slots.",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -19,6 +19,7 @@
     "standard": "^14.3.1"
   },
   "browserslist": [
-    "chrome 78"
+    "> 1%",
+    "not IE 11"
   ]
 }
