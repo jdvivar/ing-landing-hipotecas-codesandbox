@@ -65,14 +65,16 @@ This will paint a little ball of kitten furr instead of the logo and your heart 
 
 ## FAQ
 ### Where are the quotes around attribute values?
-You might have noticed all the documentation is showing this
+You might have noticed all the documentation is showing this:
 ```html
 <tag attribute=value>
 ```
-Instead of this
+... instead of this:
 ```html
 <tag attribute="value">
 ```
-That is because...
+That is because:
 1. It's perfectly valid, as long as you don't use whitespaces
-2. I personally think it's cleaner
+1. Personally I think it's cleaner
+
+To know more about unquoted attribute values read this [article by Mathias Bynens](https://mathiasbynens.be/notes/unquoted-attribute-values).
