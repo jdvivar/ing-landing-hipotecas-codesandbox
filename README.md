@@ -75,10 +75,29 @@ This will remove the first notice and change the text of the second notice
 ```
 ![tutorial 4](/doc/tutorial-4-atencion.gif)
 
-> TODO
-> ... more to come soon!
+### All available slots
+- `titulo`
+- `subtitulo`
+- `logo`
+- `hipoteca-*-titulo`
+- `hipoteca-*-descripcion`
+- `condiciones`
+- `boton`
+- `mas-informacion`
+- `ventajas-*-titulo`
+- `ventajas-*-lista`
+- `ventajas-*-lista-extra`
+- `ventajas-*-lista-*-titulo`
+- `ventajas-*-lista-*-subtitulo`
+- `ventajas-*-lista-*-descripcion`
+
+Where `*` is a number for the n-item, starting in `1`.
 
 ## FAQ
+
+### I want to modify/add/remove X thing but it doesn't seem like any of these slots will do the work for me
+Sure, ask me what you want to customise [opening an issue](https://github.com/jdvivar/ing-landing-hipotecas-demo/issues/new) and I'll do it as soon as I can.
+
 ### Where are the quotes around attribute values?
 You might have noticed all the documentation is showing this:
 ```html

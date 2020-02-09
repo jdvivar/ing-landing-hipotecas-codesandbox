@@ -63,7 +63,7 @@ export class IngLandingHipoteca extends LitElement {
                 <ing-card-hipoteca>
                     ${this.renderAtencion('1')}
                     <slot slot="titulo" name="hipoteca-1-titulo">Hipoteca Variable</slot>
-                    <slot slot="descripcion" name="hipoteca-1-description">
+                    <slot slot="descripcion" name="hipoteca-1-descripcion">
                         Desde euríbor + 0,99 %</br>
                         1,99 % TIN primer año</br>
                         (2,65 % TAE Variable)<sup>1</sup>
@@ -77,7 +77,7 @@ export class IngLandingHipoteca extends LitElement {
                 <ing-card-hipoteca>
                     ${this.renderAtencion('2')}
                     <slot slot="titulo" name="hipoteca-2-titulo">Hipoteca Mixta</slot>
-                    <slot slot="descripcion" name="hipoteca-2-description">
+                    <slot slot="descripcion" name="hipoteca-2-descripcion">
                         Desde 1,49 % TIN los 10 primeros años</br>
                         Después desde euríbor + 0,99 %</br>
                         (2,16 % TAE Variable)<sup>3</sup>
