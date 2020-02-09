@@ -36,6 +36,20 @@ export class IngLandingHipoteca extends LitElement {
     `
   }
 
+  renderAtencion (id) {
+    const slotAtencion = this.querySelector(`[slot="hipoteca-${id}-atencion"]`)
+    console.log(slotAtencion ? slotAtencion.innerHTML : slotAtencion)
+    if (!slotAtencion) {
+      return html`
+        <slot slot="atencion" name="hipoteca-${id}-atencion">Hemos bajado el precio!</slot>
+      `
+    } else {
+      return html`
+        <slot slot="atencion" name="hipoteca-${id}-atencion">${slotAtencion.innerHTML}</slot>
+      `
+    }
+  }
+
   render () {
     return html`
         <div class="wrapper">
@@ -48,9 +62,9 @@ export class IngLandingHipoteca extends LitElement {
             </div>
             <div class="hip-1">
                 <ing-card-hipoteca>
-                    <slot slot="atencion" name="hip-1-atencion">Hemos bajado el precio!</slot>
-                    <slot slot="titulo" name="hip-1-titulo">Hipoteca Variable</slot>
-                    <slot slot="descripcion" name="hip-1-description">
+                    ${this.renderAtencion('1')}
+                    <slot slot="titulo" name="hipoteca-1-titulo">Hipoteca Variable</slot>
+                    <slot slot="descripcion" name="hipoteca-1-description">
                         Desde euríbor + 0,99 %</br>
                         1,99 % TIN primer año</br>
                         (2,65 % TAE Variable)<sup>1</sup>
@@ -62,9 +76,9 @@ export class IngLandingHipoteca extends LitElement {
             </div>
             <div class="hip-2">
                 <ing-card-hipoteca>
-                    <slot slot="atencion" name="hip-2-atencion">Hemos bajado el precio!</slot>
-                    <slot slot="titulo" name="hip-2-titulo">Hipoteca Mixta</slot>
-                    <slot slot="descripcion" name="hip-2-description">
+                    ${this.renderAtencion('2')}
+                    <slot slot="titulo" name="hipoteca-2-titulo">Hipoteca Mixta</slot>
+                    <slot slot="descripcion" name="hipoteca-2-description">
                         Desde 1,49 % TIN los 10 primeros años</br>
                         Después desde euríbor + 0,99 %</br>
                         (2,16 % TAE Variable)<sup>3</sup>
