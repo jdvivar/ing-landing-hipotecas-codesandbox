@@ -78,3 +78,7 @@ That is because:
 1. Personally I think it's cleaner
 
 To know more about unquoted attribute values read this [article by Mathias Bynens](https://mathiasbynens.be/notes/unquoted-attribute-values).
+
+### Do you have unaddressed questions?
+
+Please don't hesitate and [open an issue](https://github.com/jdvivar/ing-landing-hipotecas-demo/issues/new) assigning `question` as label. I'll answer as soon as I can plus you'll help improve this documentation.
