@@ -4,13 +4,27 @@ export class IngVentaja extends LitElement {
   static get styles () {
     return css`
       :host {
-        flex-basis: 0;
-        flex-grow: 1;
+        --max-width: 300px;
+      }
+
+      @media (min-width: 768px) {
+        :host {
+          width: 50%;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        :host {
+          flex-basis: 0;
+          flex-grow: 1;
+        }
       }
 
       .wrapper {
         text-align: center;
         padding: 0 20px;
+        max-width: var(--max-width);
+        margin: 0 auto;
       }
 
       .title {
@@ -27,7 +41,6 @@ export class IngVentaja extends LitElement {
       .description {
         font-size: 16px;
       }
-
     `
   }
 

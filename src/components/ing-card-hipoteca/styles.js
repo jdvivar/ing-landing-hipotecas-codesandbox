@@ -1,6 +1,24 @@
 import { css } from 'lit-element'
 
 export const styles = css`
+
+    :host {
+        --top: 87px;
+        --description-font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+        :host{
+            --description-font-size: 16px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        :host{
+            --description-font-size: 19px;
+        }
+    }
+
     .wrapper {
         border-radius: 6px;
         border: 2px solid #e5e5e5;
@@ -8,7 +26,7 @@ export const styles = css`
         text-align: center;
         box-shadow: rgb(229,229,229) 8px 8px 0px 0px;
         position: relative;
-        margin-top: 50px;
+        margin-top: var(--top);
     }
 
     .atencion {
@@ -22,7 +40,7 @@ export const styles = css`
         display: flex;
         font-size: 19px;
         border-radius: 100%;
-        top: -50px;
+        top: calc(-1 * var(--top));
     }
 
     .atencion p {
@@ -48,7 +66,7 @@ export const styles = css`
     }
 
     .descripcion {
-        font-size: 19px;
+        font-size: var(--description-font-size);
     }
 
     .condiciones {

@@ -8,7 +8,7 @@ export class IngCardHipoteca extends LitElement {
 
   render () {
     this.style.setProperty('--delay', `${Math.random()}s`)
-    this.style.setProperty('--amp', `${Math.random() + 2}%`)
+    this.style.setProperty('--amp', `${Math.random() + 3}%`)
     return html`
       <div class="wrapper">
         <div class="atencion floater">

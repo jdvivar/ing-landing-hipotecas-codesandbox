@@ -8,15 +8,20 @@ export class IngHipotecasVentajas extends LitElement {
       margin: 80px auto 0;
     }
     
-    .wrapper-ventajas {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+    @media (min-width: 768px) {
+      .wrapper-ventajas {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+      }
     }
-
-    .wrapper-ventajas ing-ventaja {
-      flex-basis: 0;
-      flex-grow: 1;
+    
+    @media (min-width: 1024px) {
+      .wrapper-ventajas {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+      }
     }
 
     h2 {

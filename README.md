@@ -60,6 +60,19 @@ This will paint a little ball of kitten furr instead of the logo and your heart 
     <img slot=logo src=http://placekitten.com/300/100 />
 </ing-landing-hipoteca>
 ```
-
 > TODO
 > ... more to come soon!
+
+## FAQ
+### Where are the quotes around attribute values?
+You might have noticed all the documentation is showing this
+```html
+<tag attribute=value>
+```
+Instead of this
+```html
+<tag attribute="value">
+```
+That is because...
+1. It's perfectly valid, as long as you don't use whitespaces
+2. I personally think it's cleaner
