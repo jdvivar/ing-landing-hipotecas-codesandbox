@@ -2,10 +2,10 @@
 A landing page made with a single tag, ultra customisable via slots.
 
 ## Why?
-This demo has one goal and one goal only: gain the love and hearts from a group of people still unconvinced Web Components can be used to manage **web content** effortlessly... by anyone!
+This demo has one goal and one goal only: gain the love and conquer the hearts of a group of unconvinced yet creative skeptics that Web Components can be used to manage **web content** effortlessly... by anyone!
 
 ## How?
-Web Components are extremely powerful. In this case, with the web content management mindset in place, the philosophy was about creating a default experience that can be easily managed with just some markup.
+Web Components are extremely powerful. For this particular scenario —with the web content management mindset in place— the philosophy was about creating a simple and contentful experience by default, which could be tweaked later for other content.
 
 This is the landing page used for inspiration:
 
@@ -22,8 +22,10 @@ This is all the markup you need:
 ## What technologies are being used?
 I've tried to keep it simple (stupid, as in [KISS](https://en.wikipedia.org/wiki/KISS_principle)). Just [LitElement](https://github.com/Polymer/lit-element) for defining Web Components and [Parcel](https://github.com/parcel-bundler/parcel) for bundling and serving the app. For consistent code I used [Standard](https://github.com/standard/standard) as linter.
 
+But you don't really need to know any of that to start, keep reading...
+
 ## Get started
-Want to give it a shot? Go ahead: click here and explore it within the warmth on your browser 😌
+Want to give it a shot? Go ahead: click here and explore it within the warmth of your browser 😌
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/jdvivar/ing-landing-hipotecas-demo)
 
@@ -52,7 +54,7 @@ This will empty the subtitle
 </ing-landing-hipoteca>
 ```
 ### Logo
-This will paint a little ball of kitten furr instead of the logo and your heart will melt:
+This will paint a little ball of kitten furr instead of the logo and your heart will melt 😻
 ```html
 <ing-landing-hipoteca>
     <img slot=logo src=http://placekitten.com/300/100 />
