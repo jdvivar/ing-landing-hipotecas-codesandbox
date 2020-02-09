@@ -46,6 +46,7 @@ This will change the main title
     <slot slot=titulo>Hipoteca LIMÓN 🍋</slot>
 </ing-landing-hipoteca>
 ```
+
 ### Subtitle
 This will empty the subtitle
 ```html
@@ -53,12 +54,23 @@ This will empty the subtitle
     <slot slot=subtitulo></slot>
 </ing-landing-hipoteca>
 ```
+
 ### Logo
 This will paint a little ball of kitten furr instead of the logo and your heart will melt 😻
 ```html
 <ing-landing-hipoteca>
     <img slot=logo src=http://placekitten.com/300/100 />
 </ing-landing-hipoteca>
+```
+
+### Floating notices
+This will remove the first notice and change the text of the second notice
+```html
+<ing-landing-hipoteca>
+    <slot slot="hipoteca-1-atencion"></slot>
+    <slot slot="hipoteca-2-atencion">Esta hipoteca mola!</slot>
+</ing-landing-hipoteca>
+
 ```
 > TODO
 > ... more to come soon!
