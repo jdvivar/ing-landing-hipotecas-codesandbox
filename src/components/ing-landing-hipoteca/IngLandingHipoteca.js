@@ -12,27 +12,27 @@ export class IngLandingHipoteca extends LitElement {
   renderMasInformacion () {
     const slotMasInformacion = this.querySelector('[slot="mas-informacion"]')
     return html`
-      <ing-content slot="mas-informacion">
+      <slot slot="mas-informacion" name="mas-informacion">
         ${slotMasInformacion ? slotMasInformacion.innerHTML : 'Más información'}
-      </ing-content>
+      </slot>
     `
   }
 
   renderBoton () {
     const slotBoton = this.querySelector('[slot="boton"]')
     return html`
-      <ing-content slot="boton">
+      <slot name="boton" slot="boton">
         ${slotBoton ? slotBoton.innerHTML : 'Calcular mi cuota'}
-      </ing-content
+      </slot>
     `
   }
 
   renderCondiciones () {
     const slotCondiciones = this.querySelector('[slot="condiciones"]')
     return html`
-      <ing-contennt slot="condiciones">
+      <slot name="condiciones" slot="condiciones">
         ${slotCondiciones ? slotCondiciones.innerHTML : 'Domiciliando tu nómina y contratando los seguros de hogar y vida que te ofrecemos.'}
-      </ing-content>
+      </slot>
     `
   }
 
@@ -80,45 +80,49 @@ export class IngLandingHipoteca extends LitElement {
           <slot slot="titulo" name="ventajas-1-titulo">Y como siempre, con todas las ventajas</slot>
           <slot slot="ventajas" name="ventajas-1-lista">
             <ing-ventaja>
-              <ing-content slot="titulo">0 %</ing-content>
-              <ing-content slot="subtitulo">Comisión por reembolso o amortización anticipada total o parcial</ing-content>
-              <ing-content slot="descripcion">Adelanta tus pagos y cancela tu hipoteca cuando quieras sin coste.</ing-content>
+              <slot name="ventajas-1-lista-1-titulo" slot="titulo">0 %</slot>
+              <slot name="ventajas-1-lista-1-subtitulo" slot="subtitulo">Comisión por reembolso o amortización anticipada total o parcial</slot>
+              <slot name="ventajas-1-lista-1-descripcion" slot="descripcion">Adelanta tus pagos y cancela tu hipoteca cuando quieras sin coste.</slot>
             </ing-ventaja>
             <ing-ventaja>
-              <ing-content slot="titulo">0 %</ing-content>
-              <ing-content slot="subtitulo">Comisión de apertura</ing-content>
-              <ing-content slot="descripcion">No te cobramos por elegirnos como tu banco.</ing-content>
+              <slot name="ventajas-1-lista-2-titulo" slot="titulo">0 %</slot>
+              <slot name="ventajas-1-lista-2-subtitulo" slot="subtitulo">Comisión de apertura</slot>
+              <slot name="ventajas-1-lista-2-descripcion" slot="descripcion">No te cobramos por elegirnos como tu banco.</slot>
             </ing-ventaja>
             <ing-ventaja>
-              <ing-content slot="titulo">0 %</ing-content>
-              <ing-content slot="subtitulo">Comisión por subrogación</ing-content>
-              <ing-content slot="descripcion">Si encuentras mejores condiciones, eres libre para aprovecharlas.</ing-content>
+              <slot name="ventajas-1-lista-3-titulo" slot="titulo">0 %</slot>
+              <slot name="ventajas-1-lista-3-subtitulo" slot="subtitulo">Comisión por subrogación</slot>
+              <slot name="ventajas-1-lista-3-descripcion" slot="descripcion">Si encuentras mejores condiciones, eres libre para aprovecharlas.</slot>
             </ing-ventaja>
             <ing-ventaja>
-              <ing-content slot="titulo">0 %</ing-content>
-              <ing-content slot="subtitulo">Por cambio de condiciones</ing-content>
-              <ing-content slot="descripcion">Cambia el plazo y la cuota sin que te cueste nada.</ing-content>
+              <slot name="ventajas-1-lista-4-titulo" slot="titulo">0 %</slot>
+              <slot name="ventajas-1-lista-4-subtitulo" slot="subtitulo">Por cambio de condiciones</slot>
+              <slot name="ventajas-1-lista-4-descripcion" slot="descripcion">Cambia el plazo y la cuota sin que te cueste nada.</slot>
             </ing-ventaja>
           </slot>
         </ing-hipotecas-ventajas>
         <ing-hipotecas-ventajas>
-          <slot slot="titulo" name="ventajas-2-titulo">Y sin gastos, ninguno</slot>
+          <slot name="titulo" slot="titulo" name="ventajas-2-titulo">Y sin gastos, ninguno</slot>
           <slot slot="ventajas" name="ventajas-2-lista">
             <ing-ventaja>
-              <ing-content slot="titulo">0 €</ing-content>
-              <ing-content slot="subtitulo">Gastos de notaría</ing-content>
+              <slot name="ventajas-2-lista-1-titulo" slot="titulo">0 €</slot>
+              <slot name="ventajas-2-lista-1-subtitulo" slot="subtitulo">Gastos de notaría</slot>
+              <slot name="ventajas-2-lista-1-descripcion" slot="descripcion"></slot>
             </ing-ventaja>
             <ing-ventaja>
-              <ing-content slot="titulo">0 €</ing-content>
-              <ing-content slot="subtitulo">Gastos de gestoría</ing-content>
+              <slot name="ventajas-2-lista-2-titulo" slot="titulo">0 €</slot>
+              <slot name="ventajas-2-lista-2-subtitulo" slot="subtitulo">Gastos de gestoría</slot>
+              <slot name="ventajas-2-lista-2-descripcion" slot="descripcion"></slot>
             </ing-ventaja>
             <ing-ventaja>
-              <ing-content slot="titulo">0 €</ing-content>
-              <ing-content slot="subtitulo">Gastos de registro</ing-content>
+              <slot name="ventajas-2-lista-3-titulo" slot="titulo">0 €</slot>
+              <slot name="ventajas-2-lista-3-subtitulo" slot="subtitulo">Gastos de registro</slot>
+              <slot name="ventajas-2-lista-3-descripcion" slot="descripcion"></slot>
             </ing-ventaja>
             <ing-ventaja>
-              <ing-content slot="titulo">0 €</ing-content>
-              <ing-content slot="subtitulo">Gastos de tasación*</ing-content>
+              <slot name="ventajas-2-lista-4-titulo" slot="titulo">0 €</slot>
+              <slot name="ventajas-2-lista-4-subtitulo" slot="subtitulo">Gastos de tasación*</slot>
+              <slot name="ventajas-2-lista-4-descripcion" slot="descripcion"></slot>
             </ing-ventaja>
           </slot>
         </ing-hipotecas-ventajas>
