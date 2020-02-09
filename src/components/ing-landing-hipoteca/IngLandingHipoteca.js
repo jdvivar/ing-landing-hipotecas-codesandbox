@@ -99,6 +99,7 @@ export class IngLandingHipoteca extends LitElement {
               <slot name="ventajas-1-lista-4-subtitulo" slot="subtitulo">Por cambio de condiciones</slot>
               <slot name="ventajas-1-lista-4-descripcion" slot="descripcion">Cambia el plazo y la cuota sin que te cueste nada.</slot>
             </ing-ventaja>
+            <slot name="ventajas-1-lista-extra"></slot>
           </slot>
         </ing-hipotecas-ventajas>
         <ing-hipotecas-ventajas>
@@ -125,6 +126,7 @@ export class IngLandingHipoteca extends LitElement {
               <slot name="ventajas-2-lista-4-descripcion" slot="descripcion"></slot>
             </ing-ventaja>
           </slot>
+          <slot name="ventajas-2-lista-extra"></slot>
         </ing-hipotecas-ventajas>
         <div style="background-color: #f0f0f0; height: 500px; margin-top: 50px;"></div>
     `
