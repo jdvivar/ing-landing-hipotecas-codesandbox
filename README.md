@@ -17,7 +17,7 @@ This is all the markup you need:
 ```
 
 ... and this is the result:
-![screenshot](landing-screenshot.png)
+![screenshot](doc/landing-screenshot.png)
 
 ## What technologies are being used?
 I've tried to keep it simple (stupid, as in [KISS](https://en.wikipedia.org/wiki/KISS_principle)). Just [LitElement](https://github.com/Polymer/lit-element) for defining Web Components and [Parcel](https://github.com/parcel-bundler/parcel) for bundling and serving the app. For consistent code I used [Standard](https://github.com/standard/standard) as linter.
@@ -37,7 +37,7 @@ Want to give it a shot? Go ahead: click here and explore it within the warmth of
 > ```
 
 ## Things to try
-For the following steps to work, just stay on [`index.html`](index.html)
+For the following steps to work, just stay on [`markup.html`](markup.html)
 
 ### Main title
 This will change the main title

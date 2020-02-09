@@ -38,7 +38,6 @@ export class IngLandingHipoteca extends LitElement {
 
   renderAtencion (id) {
     const slotAtencion = this.querySelector(`[slot="hipoteca-${id}-atencion"]`)
-    console.log(slotAtencion ? slotAtencion.innerHTML : slotAtencion)
     if (!slotAtencion) {
       return html`
         <slot slot="atencion" name="hipoteca-${id}-atencion">Hemos bajado el precio!</slot>
