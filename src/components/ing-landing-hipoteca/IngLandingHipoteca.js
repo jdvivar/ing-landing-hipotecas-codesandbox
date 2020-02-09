@@ -43,8 +43,8 @@ export class IngLandingHipoteca extends LitElement {
                 <a class="logo" href="/" title="ING - People in progress [Ir a la página inicial]">
                     <slot name="logo"><img src="https://www.ing.es/comun/images/principal/logo-ing2.svg"/></slot>
                 </a>
-                <h1><slot name="main-title">Hipotecas NARANJA</slot></h1>
-                <p><slot name="main-subtitle">Con estos precios, ¡quítate el miedo!</slot></p>
+                <h1><slot name="titulo">Hipotecas NARANJA</slot></h1>
+                <p><slot name="subtitulo">Con estos precios, ¡quítate el miedo!</slot></p>
             </div>
             <div class="hip-1">
                 <ing-card-hipoteca>
