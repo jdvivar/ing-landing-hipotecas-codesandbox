@@ -86,6 +86,7 @@ export const styles = css`
         border-radius: 4px;
         font-weight: bold;
         transition: all 0.3s ease;
+        font-family: INGMe, Arial, sans-serif;
     }
 
     button:hover {
