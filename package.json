@@ -1,5 +1,6 @@
 {
-  "name": "landing-hipotecas",
+  "name": "ing-landing-hipotecas-demo",
+  "repository": "github:jdvivar/ing-landing-hipotecas-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
