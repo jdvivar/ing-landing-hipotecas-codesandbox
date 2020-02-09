@@ -5,6 +5,7 @@ export const styles = css`
     :host {
         --top: 87px;
         --description-font-size: 14px;
+        --max-width: 300px;
     }
 
     @media (min-width: 768px) {
@@ -26,7 +27,9 @@ export const styles = css`
         text-align: center;
         box-shadow: rgb(229,229,229) 8px 8px 0px 0px;
         position: relative;
+        margin: 0 auto;
         margin-top: var(--top);
+        max-width: var(--max-width);
     }
 
     .atencion {

@@ -2,30 +2,36 @@ import { css } from 'lit-element'
 
 export const styles = css`
     :host {
-        --subtitulo-font-size: 20px;
+        --subtitulo-font-size: 24px;
+        --gap: 30px;
+        --display: block;
+        --padding: 20px;
     }
 
     @media (min-width: 768px) {
         :host{
-            --subtitulo-font-size: 24px;
+            --gap: 15px;
+            --display: grid;
+            --padding: 40px;
         }
     }
 
     @media (min-width: 1024px) {
         :host{
             --subtitulo-font-size: 38px;
+            --gap: 30px;
         }
     }
 
     .wrapper {
-        display: grid;
+        display: var(--display);
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 30px;
+        grid-column-gap: var(--gap);
         grid-row-gap: 0px;
         max-width: var(--max-width);
         margin: 0 auto;
-        padding: 40px;
+        padding: var(--padding);
     }
 
     .main {
