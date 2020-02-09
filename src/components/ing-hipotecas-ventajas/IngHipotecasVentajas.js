@@ -6,6 +6,7 @@ export class IngHipotecasVentajas extends LitElement {
     .wrapper {
       max-width: var(--max-width);
       margin: 80px auto 0;
+      padding: 20px;
     }
     
     @media (min-width: 768px) {
