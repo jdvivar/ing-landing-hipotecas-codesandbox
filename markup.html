@@ -1,1 +1,105 @@
-<ing-landing-hipoteca></ing-landing-hipoteca>
+<ing-landing-hipoteca>
+    
+</ing-landing-hipoteca>
+
+<!--
+
+## Things to try
+
+### Main title
+This will change the main title
+
+<ing-landing-hipoteca>
+    <slot slot=titulo>Hipoteca LIMÓN 🍋</slot>
+</ing-landing-hipoteca>
+
+### Subtitle
+This will empty the subtitle
+
+<ing-landing-hipoteca>
+    <slot slot=subtitulo></slot>
+</ing-landing-hipoteca>
+
+### Logo
+This will paint a little ball of kitten furr instead of the logo and your heart will melt 😻
+
+<ing-landing-hipoteca>
+    <img slot=logo src=http://placekitten.com/300/100 />
+</ing-landing-hipoteca>
+
+### Floating notices
+This will remove the first notice and change the text of the second notice
+
+<ing-landing-hipoteca>
+    <slot slot="hipoteca-1-atencion"></slot>
+    <slot slot="hipoteca-2-atencion">Esta hipoteca mola!</slot>
+</ing-landing-hipoteca>
+
+### Mortgage card
+This will change the title, description and floating notice of the 2nd mortgage card
+
+<ing-landing-hipoteca>
+    <slot slot="hipoteca-2-atencion">Esta ha bajado más!</slot>
+    <slot slot="hipoteca-2-titulo">Hipoteca Jamón y Queso</slot>
+    <slot slot="hipoteca-2-descripcion">
+      Los 10 primeros añitos de nuestra relación a 1.49% TIN,</br>
+      luego manda el euríbor al que hay que poner 0.99%,</br>
+      y nos obligan a decirte que eso en total es TAE variable del 2.16%<sup>3</sup>
+    </slot>
+</ing-landing-hipoteca>
+
+### Conditions, button and more information link
+By design, these are the same for any mortgage card and therefore this markup will change the content in all of them. This prevent unnecessary copy errors. This markup will change all of them:
+
+<ing-landing-hipoteca>
+    <slot slot="condiciones">
+        Necesitamos tu nómina y que contrates seguros de vida y hogar. Todo queda en casa!
+    </slot>
+    <slot slot="boton">
+        Empezar!
+    </slot>
+    <slot slot="mas-informacion">
+      + INFO
+    </slot>
+</ing-landing-hipoteca>
+
+### Benefits title
+This will change the title of the 1st list of benefits
+
+<ing-landing-hipoteca>
+    <slot slot="ventajas-2-titulo">
+        Cero comisiones
+    </slot>
+</ing-landing-hipoteca>
+
+
+### Benefits list, add another benefit
+This will add a 5th benefit to the 2nd list of benefits
+
+<ing-landing-hipoteca>
+    <ing-ventaja slot="ventajas-2-lista-extra">
+        <slot slot="titulo">0 €</slot>
+        <slot slot="subtitulo">Gastos inventados</slot>
+        <slot slot="descripcion">Sin más gastos sorpresa </slot>
+    </ing-ventaja>
+</ing-landing-hipoteca>
+
+### All available slots
+- `titulo`
+- `subtitulo`
+- `logo`
+- `hipoteca-*-titulo`
+- `hipoteca-*-descripcion`
+- `condiciones`
+- `boton`
+- `mas-informacion`
+- `ventajas-*-titulo`
+- `ventajas-*-lista`
+- `ventajas-*-lista-extra`
+- `ventajas-*-lista-*-titulo`
+- `ventajas-*-lista-*-subtitulo`
+- `ventajas-*-lista-*-descripcion`
+
+Where `*` is a number for the n-item, starting in `1`.
+
+-->

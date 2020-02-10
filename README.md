@@ -78,6 +78,87 @@ This will remove the first notice and change the text of the second notice
 ```
 <img style="border: 1px solid #ddd; width: 100%;" alt=tutorial-4 src=doc/tutorial-4-atencion.gif />
 
+### Mortgage card
+This will change the title, description and floating notice of the 2nd mortgage card
+```html
+<ing-landing-hipoteca>
+    <slot slot="hipoteca-2-atencion">Esta ha bajado más!</slot>
+    <slot slot="hipoteca-2-titulo">Hipoteca Jamón y Queso</slot>
+    <slot slot="hipoteca-2-descripcion">
+      Los 10 primeros añitos de nuestra relación a 1.49% TIN,</br>
+      luego manda el euríbor al que hay que poner 0.99%,</br>
+      y nos obligan a decirte que eso en total es TAE variable del 2.16%<sup>3</sup>
+    </slot>
+</ing-landing-hipoteca>
+```
+
+### Conditions, button and more information link
+By design, these are the same for any mortgage card and therefore this markup will change the content in all of them. This prevent unnecessary copy errors. This markup will change all of them:
+```html
+<ing-landing-hipoteca>
+    <slot slot="condiciones">
+        Necesitamos tu nómina y que contrates seguros de vida y hogar. Todo queda en casa!
+    </slot>
+    <slot slot="boton">
+        Empezar!
+    </slot>
+    <slot slot="mas-informacion">
+      + INFO
+    </slot>
+</ing-landing-hipoteca>
+```
+
+### Benefits title
+This will change the title of the 2nd list of benefits
+```html
+<ing-landing-hipoteca>
+    <slot slot="ventajas-2-titulo">
+        Cero comisiones
+    </slot>
+</ing-landing-hipoteca>
+```
+
+### Benefits list, update
+This will update the 1st list of benefits, and instead use 3 different benefits
+```html
+<ing-landing-hipoteca>
+    <slot slot="ventajas-1-lista">
+        <ing-ventaja>
+          <slot slot="titulo">0 %</slot>
+          <slot slot="subtitulo">Comisión por reembolso o amortización anticipada total o parcial</slot>
+        </ing-ventaja>
+        <ing-ventaja>
+          <slot slot="titulo">0 %</slot>
+          <slot slot="subtitulo">Comisión de apertura</slot>
+        </ing-ventaja>
+    </slot>
+</ing-landing-hipoteca>
+```
+
+### Benefits list, update a specifig benefit
+This will remove all the descriptions from the 1st list of benefits
+```html
+<ing-landing-hipoteca>
+    <slot slot="ventajas-1-lista-1-descripcion"></slot>
+    <slot slot="ventajas-1-lista-2-descripcion"></slot>
+    <slot slot="ventajas-1-lista-3-descripcion"></slot>
+    <slot slot="ventajas-1-lista-4-descripcion"></slot>
+</ing-landing-hipoteca>
+```
+
+### Benefits list, add another benefit
+This will add a 5th benefit to the 2nd list of benefits
+```html
+<ing-landing-hipoteca>
+    <ing-ventaja slot="ventajas-2-lista-extra">
+        <slot slot="titulo">0 €</slot>
+        <slot slot="subtitulo">Gastos inventados</slot>
+        <slot slot="descripcion">Sin más gastos sorpresa </slot>
+    </ing-ventaja>
+</ing-landing-hipoteca>
+```
+
+
 ### All available slots
 - `titulo`
 - `subtitulo`
