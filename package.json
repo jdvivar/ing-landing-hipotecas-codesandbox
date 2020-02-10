@@ -2,6 +2,7 @@
   "name": "ing-landing-hipotecas-demo",
   "repository": "github:jdvivar/ing-landing-hipotecas-demo",
   "license": "SEE LICENSE IN LICENSE FILE",
+  "author": "Daniel Vivar <jdvivar@gmail.com> (http://www.danielvivar.com)",
   "private": true,
   "version": "1.0.0",
   "description": "A landing page made with a single tag, ultra customisable via slots.",
