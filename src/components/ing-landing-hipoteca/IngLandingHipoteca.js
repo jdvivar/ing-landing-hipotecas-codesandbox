@@ -116,7 +116,7 @@ export class IngLandingHipoteca extends LitElement {
           </slot>
         </ing-hipotecas-ventajas>
         <ing-hipotecas-ventajas>
-          <slot name="titulo" slot="titulo" name="ventajas-2-titulo">Y sin gastos, ninguno</slot>
+          <slot slot="titulo" name="ventajas-2-titulo">Y sin gastos, ninguno</slot>
           <slot slot="ventajas" name="ventajas-2-lista">
             <ing-ventaja>
               <slot name="ventajas-2-lista-1-titulo" slot="titulo">0 €</slot>
@@ -138,8 +138,8 @@ export class IngLandingHipoteca extends LitElement {
               <slot name="ventajas-2-lista-4-subtitulo" slot="subtitulo">Gastos de tasación*</slot>
               <slot name="ventajas-2-lista-4-descripcion" slot="descripcion"></slot>
             </ing-ventaja>
+            <slot name="ventajas-2-lista-extra"></slot>
           </slot>
-          <slot name="ventajas-2-lista-extra"></slot>
         </ing-hipotecas-ventajas>
         <div style="background-color: #f0f0f0; height: 500px; margin-top: 50px;"></div>
     `
