@@ -181,8 +181,8 @@ Where `*` is a number for the n-item, starting in `1`.
 ### I want to modify/add/remove X thing but it doesn't seem like any of these slots will do the work for me
 Sure, ask me what you want to customise [opening an issue](https://github.com/jdvivar/ing-landing-hipotecas-demo/issues/new) and I'll do it as soon as I can.
 
-### What is Glith? Are you planning to use Glitch for managing web content?
-To the last question: no way! Glitch is just a tool to edit code directly in the browser without much hassle. I think it gives anyone the opportunity to play and explore in ways they might have never thought of before.
+### What is [Glitch](https://glitch.com/about)? Are you planning to use Glitch for managing web content?
+To the last question: no way! Glitch is just a tool to edit code directly in the browser without much hassle. I think it gives anyone the opportunity to play and explore in ways they might have never thought of before. Find out more bout Glitch in [its about page](https://glitch.com/about).
 
 ### Do you have unaddressed questions?
 Please don't hesitate and [open an issue](https://github.com/jdvivar/ing-landing-hipotecas-demo/issues/new) assigning `question` as label. I'll answer as soon as I can plus you'll help improve this documentation.
