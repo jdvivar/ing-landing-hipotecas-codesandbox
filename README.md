@@ -1,6 +1,8 @@
 # `<ing-landing-hipoteca>`
 A landing page made with a single tag, ultra customisable via slots.
 
+> Notice: this demo used a copyrighted SVG logo through a HREF link in the code (the logo itself wasn't part of this repository), still visible on GIF images for demo purposes. It's now been removed, to avoid confusion. Now a cute kitten would show up instead. 🐱
+
 ## Why?
 This demo has one goal and one goal only: gain the love and conquer the hearts of a group of unconvinced yet creative skeptics that Web Components can be used to manage **web content** effortlessly... by anyone!
 
